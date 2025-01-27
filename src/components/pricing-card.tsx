@@ -30,7 +30,7 @@ export function PricingCard({
   className,
 }: PricingCardProps) {
   return (
-    <Card className={cn("relative shadow-lg border-0 border", className)}>
+    <Card className={cn("relative shadow-lg border-0", className)}>
       <CardContent className="flex flex-col items-start p-8">
         <h4 className="font-heading font-semibold text-foreground font-bold text-3xl">{name}</h4>
         <div className="mt-5">
@@ -45,12 +45,10 @@ export function PricingCard({
           <PricingFeatureItem text={feature3} />
           <PricingFeatureItem text={feature4} />
           <PricingFeatureItem text={feature5} />
-          <PricingFeatureItem />
-          <PricingFeatureItem text={feature5} />
         </ul>
         <CtaButton href="#" text="Get Started" className="mt-10 w-full" />
       </CardContent>
-      {isMostPopular === true && (
+      {isMostPopular && (
         <span className="absolute inset-x-0 -top-5 mx-auto w-32 rounded-full bg-primary px-3 py-2 text-center text-sm font-semibold text-primary-foreground shadow-md bg-gradient-to-br from-accent">
           Most popular
         </span>

@@ -1,18 +1,18 @@
 import { Server, Smartphone } from "lucide-react";
 import Image from "next/image";
-
 import { FeatureItem } from "@/components/feature-item";
 
 export function FeaturesSection() {
   return (
-    <section className="container flex flex-col py-24 md:flex-row md:items-center gap-8 gap-20 max-w-6xl">
+    <section className="container flex flex-col py-24 md:flex-row md:items-center gap-20 max-w-6xl">
       <div className="flex flex-1 flex-col items-start gap-10">
         <div className="flex flex-col gap-3">
           <span className="font-bold text-primary text-left italic font-heading">
             Peace Of Mind
           </span>
           <h2 className="font-heading tracking-tight sm:text-4xl text-balance text-left font-bold text-2xl">
-            No Wordpress/Custom Coded&lt;br&gt;
+            No Wordpress/Custom Coded
+            <br />
           </h2>
         </div>
         <p className="text-lg text-muted-foreground text-balance max-w-lg text-left hidden">
